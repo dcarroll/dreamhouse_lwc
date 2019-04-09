@@ -1,0 +1,27 @@
+=== Test Results
+TEST NAME                                        OUTCOME  MESSAGE  RUNTIME (MS)
+───────────────────────────────────────────────  ───────  ───────  ────────────
+TestPropertyController.testGetPagedPropertyList  Pass              198
+TestPropertyController.testGetPictures           Pass              36
+TestPropertyController.testGetPropertyList       Pass              45
+
+=== Test Summary
+NAME                 VALUE
+───────────────────  ───────────────────────────────────────────────────────────
+Outcome              Passed
+Tests Ran            3
+Passing              3
+Failing              0
+Skipped              0
+Pass Rate            100%
+Fail Rate            0%
+Test Start Time      Apr 8, 2019 7:32 PM
+Test Execution Time  279 ms
+Test Total Time      279 ms
+Command Time         3708 ms
+Hostname             https://fun-enterprise-7479-dev-ed.cs92.my.salesforce.com/
+Org Id               00D3F0000009AyqUAE
+Username             test-f7vtkg7edph7@example.com
+Test Run Id          7073F00000X5T3FQAV
+User Id              0053F000002hKYXQA2
+

@@ -1,0 +1,97 @@
+{
+  "status": 0,
+  "result": {
+    "summary": {
+      "outcome": "Passed",
+      "testsRan": 3,
+      "passing": 3,
+      "failing": 0,
+      "skipped": 0,
+      "passRate": "100%",
+      "failRate": "0%",
+      "testStartTime": "Apr 8, 2019 7:32 PM",
+      "testExecutionTime": "279 ms",
+      "testTotalTime": "279 ms",
+      "commandTime": "3342 ms",
+      "hostname": "https://fun-enterprise-7479-dev-ed.cs92.my.salesforce.com/",
+      "orgId": "00D3F0000009AyqUAE",
+      "username": "test-f7vtkg7edph7@example.com",
+      "testRunId": "7073F00000X5T3FQAV",
+      "userId": "0053F000002hKYXQA2"
+    },
+    "tests": [
+      {
+        "attributes": {
+          "type": "ApexTestResult",
+          "url": "/services/data/v45.0/tooling/sobjects/ApexTestResult/07M3F000002yrCSUAY"
+        },
+        "Id": "07M3F000002yrCSUAY",
+        "QueueItemId": "7093F000000KZWxQAO",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "7073F00000X5T3FQAV",
+        "MethodName": "testGetPagedPropertyList",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "attributes": {
+            "type": "ApexClass",
+            "url": "/services/data/v45.0/tooling/sobjects/ApexClass/01p3F0000022dUPQAY"
+          },
+          "Id": "01p3F0000022dUPQAY",
+          "Name": "TestPropertyController",
+          "NamespacePrefix": null
+        },
+        "RunTime": 198,
+        "FullName": "TestPropertyController.testGetPagedPropertyList"
+      },
+      {
+        "attributes": {
+          "type": "ApexTestResult",
+          "url": "/services/data/v45.0/tooling/sobjects/ApexTestResult/07M3F000002yrCTUAY"
+        },
+        "Id": "07M3F000002yrCTUAY",
+        "QueueItemId": "7093F000000KZWxQAO",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "7073F00000X5T3FQAV",
+        "MethodName": "testGetPictures",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "attributes": {
+            "type": "ApexClass",
+            "url": "/services/data/v45.0/tooling/sobjects/ApexClass/01p3F0000022dUPQAY"
+          },
+          "Id": "01p3F0000022dUPQAY",
+          "Name": "TestPropertyController",
+          "NamespacePrefix": null
+        },
+        "RunTime": 36,
+        "FullName": "TestPropertyController.testGetPictures"
+      },
+      {
+        "attributes": {
+          "type": "ApexTestResult",
+          "url": "/services/data/v45.0/tooling/sobjects/ApexTestResult/07M3F000002yrCUUAY"
+        },
+        "Id": "07M3F000002yrCUUAY",
+        "QueueItemId": "7093F000000KZWxQAO",
+        "StackTrace": null,
+        "Message": null,
+        "AsyncApexJobId": "7073F00000X5T3FQAV",
+        "MethodName": "testGetPropertyList",
+        "Outcome": "Pass",
+        "ApexClass": {
+          "attributes": {
+            "type": "ApexClass",
+            "url": "/services/data/v45.0/tooling/sobjects/ApexClass/01p3F0000022dUPQAY"
+          },
+          "Id": "01p3F0000022dUPQAY",
+          "Name": "TestPropertyController",
+          "NamespacePrefix": null
+        },
+        "RunTime": 45,
+        "FullName": "TestPropertyController.testGetPropertyList"
+      }
+    ]
+  }
+}
