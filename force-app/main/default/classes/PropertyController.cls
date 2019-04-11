@@ -11,6 +11,7 @@ public with sharing class PropertyController {
                       ORDER BY price__c LIMIT 100];
     }
 
+
     @AuraEnabled(cacheable=true)
     public static PagedResult getPagedPropertyList(String searchKey, Decimal maxPrice, Integer minBedrooms, Integer minBathrooms, Integer pageSize, Integer pageNumber) {
         maxPrice = Decimal.valueOf(maxPrice + '');
