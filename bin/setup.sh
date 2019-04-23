@@ -5,6 +5,7 @@ exec 3>&1 4>&2 #save original stdout and stderr in case of redirection
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 tmpfile=$(mktemp)
+
 source $DIR/util.sh
 
 function deployToScratchOrg {
@@ -17,11 +18,11 @@ function deployToScratchOrg {
     invokeCmd "sfdx force:data:tree:import -p data/sample-data.json --json 2>&1 | jq ."
     exec 1>&3 2>&4 # reset stderr and stdout
     orgurl=$(sfdx force:org:open -r --json | jq .result.url -r)
-    sfdx alerter:twilio:sendalert -m 'Dreamhouse app finished installing in scratch org '$orgurl -p 6507430794
     sfdx alerter:slack:sendalert -m 'Dreamhouse app finished install in scratch org :smile: <'$orgurl'|Scratch Org>' -c '#random' -e ':lol:'
     $(sfdx force:apex:test:run -w 10 --json > $tmpfile)
     testurl=$(sfdx force:org:open -r -p lightning/setup/ApexTestHistory/home --json | jq .result.url -r)
-    sfdx alerter:slack:sendalert -m ':thumbsup: Tests have completed with no failures. <'$testurl'|Test Results>' -c '#random' -e ':thumbsup:'
+    orgurl=$(sfdx force:org:open -r -p lightning/n/Property_Explorer --json | jq .result.url -r)
+    sfdx alerter:slack:sendalert -m ':thumbsup: Tests have completed with no failures. <'$testurl'|Test Results> see <'$orgurl'|Dreamhouse App> for installed app.' -c '#random' -e ':thumbsup:'
     return 0
 }
 

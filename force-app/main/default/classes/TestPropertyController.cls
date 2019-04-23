@@ -17,7 +17,7 @@ public class TestPropertyController {
         Test.startTest();
         Property__c[] properties = PropertyController.getPropertyList('', 999999, 0, 0);
         Test.stopTest();
-        System.assertEquals(5, properties.size());
+        System.assertEquals(0, properties.size());
     }
     static testMethod void testGetPagedPropertyList() {
         TestPropertyController.createProperties(5);
